@@ -31,17 +31,17 @@
 
     <section>
         <div>
-            <form method="post" action="enviar_correo.php">
-                <label for="name">Nombre:</label>
-                <input type="text" id="name" name="name" required>
+            <form action="php/contactenos/enviarCorreo.php" method="post">
+                <label for="destinatario">Destinatario:</label>
+                <input type="email" id="destinatario" name="destinatario" required><br>
 
-                <label for="email">Correo electrónico:</label>
-                <input type="email" id="email" name="email" required>
+                <label for="asunto">Asunto:</label>
+                <input type="text" id="asunto" name="asunto" required><br>
 
-                <label for="message">Mensaje:</label>
-                <textarea id="message" name="message" required></textarea>
+                <label for="cuerpo">Cuerpo del correo:</label>
+                <textarea id="cuerpo" name="cuerpo" required></textarea><br>
 
-                <button type="submit">Enviar mensaje</button>
+                <input type="submit" value="Enviar correo">
             </form>
 
         </div>
