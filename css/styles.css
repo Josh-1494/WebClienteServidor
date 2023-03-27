@@ -1,0 +1,249 @@
+/* variables globales */
+:root {
+    --primario: #FFB100;
+    --primariosec: #FBC252;
+    --claro: #F0ECCF;
+    --contraste: #829b77;
+    --blanco: #ffffff;
+    --oscuro: #464545;
+    --gris: #afafaf;
+}
+
+/* variables Generales */
+html {
+    box-sizing: border-box;
+}
+
+* {
+    box-sizing: inherit;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background-color: var(--claro);
+}
+
+h4 {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* variables del Header */
+.header {
+    background-color: var(--primario);
+}
+
+.header img{
+    width:250px;
+    height:auto;
+}
+
+.headerContainer {
+    padding: 0 10%;
+}
+
+.menu {
+    flex-grow: 0;
+}
+
+.menu a {
+    margin: 6px;
+}
+
+.lista:hover {
+    background-color: var(--primariosec);
+}
+
+/* Estilos para la seccion del centro, el contenido */
+section {
+    min-height: calc(100vh - 100px);
+}
+
+/*Solo contempla el carrousel*/
+.carrousel {
+    margin: 0 0 2.5rem 0;
+}
+
+.carrousel img {
+    object-fit: cover;
+    height: 500px;
+}
+
+.carousel-text {
+    position: absolute;
+    bottom: 1.25rem;
+    left: 15%;
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+    color: #fff;
+}
+
+.carousel-text h5 {
+    color: var(--primario);
+    font-size: 70px;
+    font-weight: bold;
+    padding-right: 50%;
+    margin-bottom: 10px;
+}
+
+.carousel-text p{
+    color: var(--blanco);
+    font-size: 25px;
+    font-weight: bold;
+}
+
+/*El resto del contenido*/
+.maincontainer{
+    margin: 0 0 5rem 0;
+}
+
+.maincontainer h3{
+    margin: 2.5rem 0;
+    padding: 2.5rem 30%;
+    text-align: center;
+    font-size: 35px;
+    font-weight: bold;
+    color: var(--contraste);
+}
+
+.productos{
+    margin-top: 3.5rem;
+    padding: 2.5rem;
+    background-color: var(--contraste);
+}
+
+.productos h4{
+    font-size: 25px;
+    /* font-weight: bold; */
+    color: var(--claro);
+}
+
+.flex-container-Productos {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.flex-container-Productos > div{
+    width: 18rem;
+    margin: 2.5rem;
+}
+
+.imagen{
+    object-fit: cover;
+    height: 500px;
+}
+
+.botones{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.nosotroscontainer{
+    background-color: var(--contraste);
+}
+
+.container2{
+    width: 100%;
+    padding: 0 var(--bs-gutter-x,.75rem) 0 0;
+    /* padding-left: var(--bs-gutter-x,.75rem); */
+    margin-right: auto; 
+    margin-left: auto;
+}
+
+.card:hover{
+    transform:scale(1.05);
+}
+
+.nosotroscontainer img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.centadonosotros{
+    margin: 5%;
+    padding: 5%;
+}
+
+.centadonosotros h4{
+    font-size: 30px;
+    color: var(--claro);
+    margin: 0 0 30px;
+}
+
+.centadonosotros p{
+    color: var(--blanco);
+}
+
+
+
+/* Estilos para el footer */
+.footerContainer {
+    padding: 10px 10%;
+}
+
+.footer {
+    background-color: var(--oscuro);
+    color: var(--blanco);
+    padding: 30px 0 0 0;
+}
+
+footer h4 {
+    margin-bottom: 20px;
+}
+
+.parrafo {
+    color: var(--gris);
+    margin: 0 30px 30px 30px;
+    text-align: justify;
+}
+
+footer ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+footer ul li {
+    margin-bottom: 17px;
+    margin-left: 25px;
+}
+
+footer ul li a {
+    color: var(--gris);
+    text-decoration: none;
+}
+
+footer ul li a:hover {
+    color: var(--primario);
+}
+
+footer .text-center {
+    text-align: center;
+    margin-top: 30px;
+
+    font-size: 14px;
+    color: var(--gris);
+}
+
+
+@media (max-width: 500px) {
+    .header img{
+        width:150px;
+    }
+  }
+
+  @media (max-width: 350px) {
+    .header img{
+        width:100px;
+    }
+  }
