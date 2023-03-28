@@ -247,3 +247,96 @@ footer .text-center {
         width:100px;
     }
   }
+
+
+  /*Daniel*/
+.container{
+    background-color: gainsboro;
+    padding:20px;  
+     
+}
+
+.container2{
+    background-color: gray;
+    margin-bottom:30px; 
+    
+    margin-right:30px; 
+    padding-top: 5px;
+
+}
+form{
+    display:grid;
+    background-color: gray;
+    padding-bottom: 20px;
+}
+.form-row1{
+    display:grid;
+    grid-template-columns: 50% 50%;
+    padding: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.form-row2{
+    display:grid;
+    grid-template-columns: 100%;
+    padding: 5px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.form-col{
+    display:grid;
+    grid-template-rows: 50% 50%;
+    padding: 5px;
+}
+
+h3{
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+
+h2{
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    padding-top: 20px;
+}
+button{
+    font-family: 'Open Sans', sans-serif;
+    border-radius: 25px; 
+    font-weight: bold;
+}
+label{
+    font-family: 'Open Sans', sans-serif;
+    color:white;
+    font-weight: bold;
+}
+input{
+    border-radius: 25px;  
+}
+input:invalid{
+    border: 2px dashed red;
+}
+input:valid{
+    border: 2px solid black;
+}
+textarea{
+    border-radius: 25px;  
+
+}
+textarea:invalid{
+    border: 2px dashed red;
+}
+
+.hidden{
+    opacity: 0;
+    transition: all 2s
+
+}
+
+.show{
+    opacity: 1;
+
+}
