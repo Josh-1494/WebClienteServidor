@@ -65,8 +65,9 @@ main {
 
 .login-form button {
     padding: 0.5rem 1rem;
-    background-color: #0077b6;
-    color: #fff;
+    color: #000;
+    background-color: #ffc107;
+    border-color: #ffc107;
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -74,7 +75,9 @@ main {
 }
 
 .login-form button:hover {
-    background-color: #005b8f;
+    color: #000;
+    background-color: #ffca2c;
+    border-color: #ffc720;
 }
 
 .register-link {
