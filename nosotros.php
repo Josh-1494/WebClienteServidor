@@ -35,7 +35,7 @@
             <div>
                 <h3>Te contamos quienes somos</h3>
             </div>
-            <div>
+            
                 <div class="nosotroscontainer">
 
                     <div>
@@ -77,7 +77,6 @@
 
                     </div>
                 </div>
-            </div>
     </section>
 
     <footer>

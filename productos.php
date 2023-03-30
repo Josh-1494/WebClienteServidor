@@ -68,7 +68,7 @@
                         </div>
                     </div>
 
-                    <div class="card text-center">
+                ECHO    <div class="card text-center">
                         <img src="img/productotest.jpg" class="card-img-top" preload>
                         <div class="card-body">
                             <h5 class="card-title">Titulo del producto</h5>
