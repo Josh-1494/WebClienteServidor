@@ -5,7 +5,7 @@
 	<div class="login-container">
 		<div class="login-form">
 			<h2>Ingresar</h2>
-			<form>
+			<form action="registro.php" method="POST">
 				<label for="username">Correo:</label>
 				<input type="text" id="username" name="username" required>
 				<label for="password">Contraseña:</label>
@@ -14,7 +14,7 @@
 				<button type="submit">Ingresar</button>
 			</form>
 			<div class="register-link">
-				<p>No tiene una cuenta? <a href="#">Registrar</a></p>
+				<p>No tiene una cuenta? <a href="registro.php">Registrar</a></p>
 			</div>
 		</div>
 	</div>
