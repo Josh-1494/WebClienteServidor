@@ -1,3 +1,20 @@
+<?php
+session_start();
+
+if (!isset($_SESSION['carrito'])) {
+    $_SESSION['carrito'] = array();
+}
+
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    $producto_id = $_POST['producto_id'];
+    if (!isset($_SESSION['carrito'][$producto_id])) {
+        $_SESSION['carrito'][$producto_id] = 1;
+    } else {
+        $_SESSION['carrito'][$producto_id]++;
+    }
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 

@@ -373,3 +373,37 @@ color: #000;
     opacity: 1;
 
 }
+
+/* Estilos para carrito.php */
+.carrito {
+    margin-top: 3.5rem;
+    padding: 2.5rem;
+    background-color: var(--contraste);
+}
+
+.carrito h3 {
+    font-size: 25px;
+    color: var(--claro);
+    margin-bottom: 1.5rem;
+}
+
+.carrito ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.carrito li {
+    background-color: var(--forms);
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.carrito li span {
+    font-size: 16px;
+    color: var(--claro);
+}
