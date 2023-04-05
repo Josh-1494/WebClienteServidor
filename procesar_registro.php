@@ -31,35 +31,34 @@
     </head>
 
     <section>
-    <main>
-	<div class="logo-container">
-		<img class="logo" src="img/Logo.png" alt="Logo">
-	</div>
-	<div class="login-container">
-		<div class="login-form">
-			<h2>Registrar</h2>
-			<form action="procesar_registro.php" method="POST">
-				<label for="name">Nombre:</label>
-				<input type="text" id="name" name="name" required>
-				<label for="lastname1">Primer apellido:</label>
-				<input type="text" id="lastname1" name="lastname1" required>
-				<label for="lastname2">Segundo apellido:</label>
-				<input type="text" id="lastname2" name="lastname2" required>
-				<label for="email">Correo:</label>
-				<input type="email" id="email" name="email" required>
-				<label for="password">Contraseña:</label>
-				<input type="password" id="password" name="password" required>
-				<label for="confirm_password">Confirmar contraseña:</label>
-				<input type="password" id="confirm_password" name="confirm_password" required>
-				<button type="submit">Registrar</button>
-				<div class="success-message"><?php if(isset($mensaje)) echo $mensaje; ?></div>
-			</form>
-			<div class="register-link">
-				<p>Ya tiene una cuenta? <a href="login.php">Ingresar</a></p>
-			</div>
-		</div>
-	</div>
-</main>
+    <?php
+// Obtener los datos del formulario de registro
+$name = $_POST['name'];
+$lastname1 = $_POST['lastname1'];
+$lastname2 = $_POST['lastname2'];
+$email = $_POST['email'];
+$password = $_POST['password'];
+$confirm_password = $_POST['confirm_password'];
+
+// Verificar si las contraseñas coinciden
+if ($password !== $confirm_password) {
+    // Las contraseñas no coinciden, mostrar un mensaje de error y volver al formulario de registro
+    $mensaje = "Las contraseñas no coinciden, por favor verifique de nuevo la contraseña.";
+} else {
+    // Las contraseñas coinciden, agregar el usuario a la base de datos y establecer la variable $registro_exitoso en true
+    // Código para agregar el usuario a la base de datos
+
+    $registro_exitoso = true;
+    $mensaje = "Registro exitoso! Por favor, inicie sesión para continuar.";
+}
+
+// Si el registro es exitoso, redirigir al usuario a la página de inicio de sesión
+if (isset($registro_exitoso) && $registro_exitoso) {
+    header("Location: login.php");
+    exit();
+}
+?>
+
     </section>
 
     <footer>
