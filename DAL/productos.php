@@ -37,6 +37,29 @@ function ingresarProducto($pNombre, $pDescripcion, $pPrecio, $pCantidad, $pImage
     
 }
 
+function consultaProdIndex(){
+
+    $conexion = conectar();
+
+    if (mysqli_set_charset($conexion, "utf8")) {
+
+        //PREPARA la consulta
+        $stmt = $conexion->prepare("insert into productos (nombre, descripcion, precio, cantidad, imagen) values (?,?,?,?,?)");
+        $stmt->bind_param("ssdib",$iNombre, $iDescripcion, $iPrecio, $iCantidad, $iImagen);
+
+        //EJECUTA la consulta (SET parametros)
+
+        if ($stmt->execute()) {
+            $retorno = true;
+        }
+    }
+
+    desconectar($conexion);
+
+    return $retorno;
+    
+}
+
 
 
 
