@@ -15,7 +15,7 @@
 </head>
 
 <body>
-
+ 
     <form name="MiForm" id="MiForm" method="post" action="cargar.php" enctype="multipart/form-data">
         <h4 class="text-center">Seleccione imagen a cargar</h4>
         <div class="form-group">

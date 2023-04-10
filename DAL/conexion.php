@@ -16,7 +16,7 @@ function conectar()
     return $conexion;
 }
 
-function desconecta($conexion)
+function desconectar($conexion)
 {
     //Cierra la conexion
     mysqli_close($conexion);
