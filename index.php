@@ -9,8 +9,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link href="//db.onlinewebfonts.com/c/115792e2e8292773cdb8dd0ab76459f2?family=Font+Awesome+6+Free+Solid" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="//db.onlinewebfonts.com/c/115792e2e8292773cdb8dd0ab76459f2?family=Font+Awesome+6+Free+Solid"
+        rel="stylesheet" type="text/css" />
 
     <link rel="preload" href="css/styles.css" as="style">
     <link rel="stylesheet" href="css/styles.css">
@@ -35,10 +37,14 @@
         <div class="carrousel">
             <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+                        aria-label="Slide 4"></button>
                 </div>
                 <div class="carousel-inner">
                     <div class="carousel-item active">
@@ -70,12 +76,14 @@
                         </div>
                     </div>
                 </div>
-                
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Previous</span>
                 </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="next">
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Next</span>
                 </button>
@@ -85,70 +93,20 @@
         <!-- Se contempla todo el contenido dejando de lado el carrousel del intro -->
         <div class="maincontainer">
 
-        <div>
-            <h3>Complace a tu mejor amigo con un buen plato, estomago lleno corazón contento!</h3>
-        </div>
+            <div>
+                <h3>Complace a tu mejor amigo con un buen plato, estomago lleno corazón contento!</h3>
+            </div>
+
             <!-- cards de Productos -->
             <div class="productos">
                 <h4>
                     Los productos mas pedidos
                 </h4>
+
                 <div class="flex-container-Productos">
-
-                <div class="card text-center">
-                        <img src="img/productotest.jpg" class="card-img-top" preload>
-                        <div class="card-body">
-                            <h5 class="card-title">Titulo del producto</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="btn btn-warning" style="justify-content: end;"><i class="fa-regular fa-eye"></i> Ver Producto</a>
-                        </div>
-                    </div>
-
-                    <div class="card text-center">
-                        <img src="img/productotest.jpg" class="card-img-top" preload>
-                        <div class="card-body">
-                            <h5 class="card-title">Titulo del producto</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="btn btn-warning" style="justify-content: end;"><i class="fa-regular fa-eye"></i> Ver Producto</a>
-                        </div>
-                    </div>
-
-                    <div class="card text-center">
-                        <img src="img/productotest.jpg" class="card-img-top" preload>
-                        <div class="card-body">
-                            <h5 class="card-title">Titulo del producto</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="btn btn-warning" style="justify-content: end;"><i class="fa-regular fa-eye"></i> Ver Producto</a>
-                        </div>
-                    </div>
-
-                    <div class="card text-center">
-                        <img src="img/productotest.jpg" class="card-img-top" preload>
-                        <div class="card-body">
-                            <h5 class="card-title">Titulo del producto</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="btn btn-warning" style="justify-content: end;"><i class="fa-regular fa-eye"></i> Ver Producto</a>
-                        </div>
-                    </div>
-
-                    <div class="card text-center">
-                        <img src="img/productotest.jpg" class="card-img-top" preload>
-                        <div class="card-body">
-                            <h5 class="card-title">Titulo del producto</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="btn btn-warning" style="justify-content: end;"><i class="fa-regular fa-eye"></i> Ver Producto</a>
-                        </div>
-                    </div>
-
-                    <div class="card text-center">
-                        <img src="img/productotest.jpg" class="card-img-top" preload>
-                        <div class="card-body">
-                            <h5 class="card-title">Titulo del producto</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="btn btn-warning" style="justify-content: end;"><i class="fa-regular fa-eye"></i> Ver Producto</a>
-                        </div>
-                    </div>
-
+                     <?php 
+                    include 'php/producto/consultaIndex.php';
+                     ?>
                 </div>
             </div>
 
@@ -173,8 +131,12 @@
     </footer>
     <script src="js/script.js"></script>
 
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous">
+    </script>
 
 </body>
 

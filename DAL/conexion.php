@@ -12,7 +12,7 @@ function conectar()
     if(!$conexion){
         echo "Ocurrio un error con la conexion a la base de datos: ". mysqli_connect_error();
     }
-
+ 
     return $conexion;
 }
 
