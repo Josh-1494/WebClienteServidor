@@ -17,6 +17,10 @@ include 'include/header.php';
                     <input type="text" id="lastname1" name="lastname1" required>
                     <label for="lastname2">Segundo apellido:</label>
                     <input type="text" id="lastname2" name="lastname2" required>
+                    <label for="phone">Teléfono:</label>
+                    <input type="number" id="phone" name="phone" required>
+                    <label for="address">Dirección:</label>
+                    <input type="text" id="address" name="address" required>
                     <label for="email">Correo:</label>
                     <input type="email" id="email" name="email" required>
                     <label for="password">Contraseña:</label>
@@ -27,7 +31,7 @@ include 'include/header.php';
                     <div class="success-message"><?php if(isset($mensaje)) echo $mensaje; ?></div>
                 </form>
                 <div class="register-link">
-                    <p>Ya tiene una cuenta? <a href="login.php">Ingresar</a></p>
+                  <p>Ya tiene una cuenta? <a href="login.php">Ingresar</a></p>
                 </div>
             </div>
         </div>
