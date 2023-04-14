@@ -75,7 +75,7 @@ include 'include/header.php';
 
              <div class="flex-container-Productos">
                  <?php 
-                    include 'php/producto/consultaIndex.php';
+                    include 'catalogoProductos.php';
                      ?>
              </div>
          </div>

@@ -1,129 +1,38 @@
-<?php
-session_start();
+<!DOCTYPE html>
+<html lang="es">
 
-if (!isset($_SESSION['carrito'])) {
-    $_SESSION['carrito'] = array();
-}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/jquery-3.6.4.js"></script>
+    <script src="js/productos.js"></script>
+    <script src="js/jquery-ui-1.12.1/jquery-ui.js"></script>
+    <link rel="stylesheet" href="js/jquery-ui-1.12.1/jquery-ui.css">
+</head>
 
-if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    $producto_id = $_POST['producto_id'];
-    if (!isset($_SESSION['carrito'][$producto_id])) {
-        $_SESSION['carrito'][$producto_id] = 1;
-    } else {
-        $_SESSION['carrito'][$producto_id]++;
-    }
-}
-?>
+<body>
+    <!-- Header -->
+    <div>
+        <?php
+        include 'include/header.php';
+        ?>
+    </div>
+    <div>
 
-<?php
-include 'include/header.php';
- ?>
-
-<section>
-    <div class="maincontainer">
-
-        <div>
-            <h3>Catalogo de Productos</h3>
+        <div id="formProductos" class="main">
+            <h3>Listado de productos</h3>
+            <a href="agregarProducto.php"> Agregar nuevo producto </a>
+            <br>
+            <table id="productos" class='table'>
+            </table>
         </div>
+    </div>
+    <!-- Footer -->
+    <div>
+        <?php
+        include 'include/footer.php';
+        ?>
+    </div>
 
-        <!-- cards de Productos -->
-        <div class="productos">
-            <div class="flex-container-Productos">
+</body>
 
-                <div class="card text-center">
-                    <img src="img/productotest.jpg" class="card-img-top" preload>
-                    <div class="card-body">
-                        <h5 class="card-title">Titulo del producto</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                            of the card's content.</p>
-                        <h5>Precio: $$$$$$$$</h5>
-                        <br>
-                        <div class="botones">
-                            <a href="#" class="btn btn-warning"><i class="fa-regular fa-eye"></i> Ver</a>
-                            <a href="#" class="btn btn-warning"><i class='far fa-plus-square'></i> Añadir</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="card text-center">
-                    <img src="img/productotest.jpg" class="card-img-top" preload>
-                    <div class="card-body">
-                        <h5 class="card-title">Titulo del producto</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                            of the card's content.</p>
-                        <h5>Precio: $$$$$$$$</h5>
-                        <br>
-                        <div class="botones">
-                            <a href="#" class="btn btn-warning"><i class="fa-regular fa-eye"></i> Ver</a>
-                            <a href="#" class="btn btn-warning"><i class='far fa-plus-square'></i> Añadir</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="card text-center">
-                    <img src="img/productotest.jpg" class="card-img-top" preload>
-                    <div class="card-body">
-                        <h5 class="card-title">Titulo del producto</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                            of the card's content.</p>
-                        <h5>Precio: $$$$$$$$</h5>
-                        <br>
-                        <div class="botones">
-                            <a href="#" class="btn btn-warning"><i class="fa-regular fa-eye"></i> Ver</a>
-                            <a href="#" class="btn btn-warning"><i class='far fa-plus-square'></i> Añadir</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="card text-center">
-                    <img src="img/productotest.jpg" class="card-img-top" preload>
-                    <div class="card-body">
-                        <h5 class="card-title">Titulo del producto</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                            of the card's content.</p>
-                        <h5>Precio: $$$$$$$$</h5>
-                        <br>
-                        <div class="botones">
-                            <a href="#" class="btn btn-warning"><i class="fa-regular fa-eye"></i> Ver</a>
-                            <a href="#" class="btn btn-warning"><i class='far fa-plus-square'></i> Añadir</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="card text-center">
-                    <img src="img/productotest.jpg" class="card-img-top" preload>
-                    <div class="card-body">
-                        <h5 class="card-title">Titulo del producto</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                            of the card's content.</p>
-                        <h5>Precio: $$$$$$$$</h5>
-                        <br>
-                        <div class="botones">
-                            <a href="#" class="btn btn-warning"><i class="fa-regular fa-eye"></i> Ver</a>
-                            <a href="#" class="btn btn-warning"><i class='far fa-plus-square'></i> Añadir</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="card text-center">
-                    <img src="img/productotest.jpg" class="card-img-top" preload>
-                    <div class="card-body">
-                        <h5 class="card-title">Titulo del producto</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                            of the card's content.</p>
-                        <h5>Precio: $$$$$$$$</h5>
-                        <br>
-                        <div class="botones">
-                            <a href="#" class="btn btn-warning"><i class="fa-regular fa-eye"></i> Ver</a>
-                            <a href="#" class="btn btn-warning"><i class='far fa-plus-square'></i> Añadir</a>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-</section>
-
-<?php
-include 'include/footer.php';
- ?>
