@@ -1,6 +1,6 @@
 <?php
 
-require_once './DAL/productos.php';
+require_once './DAL/producto.php';
 
 
 echo   "<div class=\"card text-center\">

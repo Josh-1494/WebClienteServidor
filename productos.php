@@ -10,14 +10,14 @@
     <link rel="stylesheet" href="js/jquery-ui-1.12.1/jquery-ui.css">
 </head>
 
-<body>
-    <!-- Header -->
-    <div>
-        <?php
-        include 'include/header.php';
-        ?>
-    </div>
-    <div>
+
+
+
+    <?php
+include 'include/header.php';
+ ?>
+
+<section>
 
         <div id="formProductos" class="main">
             <h3>Listado de productos</h3>
@@ -27,12 +27,9 @@
             </table>
         </div>
     </div>
+    </section>
+
     <!-- Footer -->
-    <div>
-        <?php
-        include 'include/footer.php';
-        ?>
-    </div>
-
-</body>
-
+<?php
+include 'include/footer.php';
+ ?>
