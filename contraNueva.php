@@ -9,7 +9,7 @@ include 'include/header.php';
         </div>
         <div class="login-container">
             <div class="login-form">
-                <h2>Registrar</h2>
+                <h2>Nueva Contraseña</h2>
                 <form action="login.php" method="POST">
                     <label for="code">Codigo de verificacion enviado al email</label>
                     <input type="number" id="code" name="code" required>          
