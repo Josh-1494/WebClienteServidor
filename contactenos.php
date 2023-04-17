@@ -37,7 +37,7 @@ include 'include/header.php';
                             <br><br>
                             <div class="form-row3">
                                 <button type="submit" id="btEnviar" name="btEnviar"
-                                    onclick="almacenamiento();validacion();">Enviar</button>
+                                    onclick="almacenamiento();validacion(); ">Enviar</button>
                             </div>
                             <br>
                         </form>

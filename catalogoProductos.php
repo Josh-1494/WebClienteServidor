@@ -104,7 +104,3 @@
             </div>
         </div>
 </section>
-
-<?php
-include 'include/footer.php';
- ?>
