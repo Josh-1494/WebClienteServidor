@@ -1,14 +1,4 @@
 
-<section>
-    <div class="maincontainer">
-
-        <div>
-            <h3>Catalogo de Productos</h3>
-        </div>
-
-        <!-- cards de Productos -->
-        <div class="productos">
-            <div class="flex-container-Productos">
 
                 <div class="card text-center">
                     <img src="img/productotest.jpg" class="card-img-top" preload>
@@ -99,8 +89,5 @@
                         </div>
                     </div>
                 </div>
-                <a href="productos.php">Listado de productos para edicion</a>
 
-            </div>
-        </div>
-</section>
+                <!-- <a href="productos.php">Listado de productos para edicion</a> -->
