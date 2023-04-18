@@ -21,7 +21,7 @@ if(isset($_POST["submit"])){
         
         
         //Insertar imagen en la base de datos
-        $insertar = $db->query("INSERT into images_tabla (imagenes, creado) VALUES ('$imgContenido', now())");
+        $insertar = $db->query("INSERT into images_tabla (productid, nombre, descripcion, imagen, creado) VALUES (?,?,?,?'$imgContenido', now())");
         // COndicional para verificar la subida del fichero
         if($insertar){
             echo "Archivo Subido Correctamente.";
