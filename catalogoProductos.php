@@ -11,7 +11,7 @@
                         <div class="botones">
                         <a href="#" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fa-regular fa-eye"></i> Ver</a>
 
-                            <a href="#" class="btn btn-warning"><i class='far fa-plus-square'></i> Añadir</a>
+                            <a href="productos.php" class="btn btn-warning"><i class='far fa-plus-square'></i> COMPRAR</a>
                         </div>
                     </div>
                 </div>
@@ -26,7 +26,7 @@
                         <br>
                         <div class="botones">
                         <a href="#" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fa-regular fa-eye"></i> Ver</a>
-                            <a href="#" class="btn btn-warning"><i class='far fa-plus-square'></i> Añadir</a>
+                            <a href="productos.php" class="btn btn-warning"><i class='far fa-plus-square'></i> COMPRAR</a>
                         </div>
                     </div>
                 </div>
@@ -41,7 +41,7 @@
                         <br>
                         <div class="botones">
                         <a href="#" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fa-regular fa-eye"></i> Ver</a>
-                            <a href="#" class="btn btn-warning"><i class='far fa-plus-square'></i> Añadir</a>
+                            <a href="productos.php" class="btn btn-warning"><i class='far fa-plus-square'></i> COMPRAR</a>
                         </div>
                     </div>
                 </div>
@@ -56,7 +56,7 @@
                         <br>
                         <div class="botones">
                         <a href="#" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fa-regular fa-eye"></i> Ver</a>
-                            <a href="#" class="btn btn-warning"><i class='far fa-plus-square'></i> Añadir</a>
+                            <a href="productos.php" class="btn btn-warning"><i class='far fa-plus-square'></i> COMPRAR</a>
                         </div>
                     </div>
                 </div>
@@ -71,7 +71,7 @@
                         <br>
                         <div class="botones">
                         <a href="#" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fa-regular fa-eye"></i> Ver</a>
-                            <a href="#" class="btn btn-warning"><i class='far fa-plus-square'></i> Añadir</a>
+                            <a href="productos.php" class="btn btn-warning"><i class='far fa-plus-square'></i> COMPRAR</a>
                         </div>
                     </div>
                 </div>
@@ -86,7 +86,7 @@
                         <br>
                         <div class="botones">
                         <a href="#" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fa-regular fa-eye"></i> Ver</a>
-                            <a href="#" class="btn btn-warning"><i class='far fa-plus-square'></i> Añadir</a>
+                            <a href="productos.php" class="btn btn-warning"><i class='far fa-plus-square'></i> COMPRAR</a>
                         </div>
                     </div>
                 </div>

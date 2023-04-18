@@ -1,26 +1,23 @@
 <?php
 include 'include/header.php';
  ?>
+ <head>
+ <script src="js/jquery-3.6.4.js"></script>
+    <script src="js/carrito.js"></script>
+    <script src="js/jquery-ui-1.12.1/jquery-ui.js"></script>
+    <link rel="stylesheet" href="js/jquery-ui-1.12.1/jquery-ui.css">
+</head>   
 
 <section>
-    <div>
-        <div class="carrito">
-            <?php
-                session_start();
-                if (isset($_SESSION['carrito']) && count($_SESSION['carrito']) > 0) {
-                    echo "<h3>Productos en el carrito:</h3>";
-                    echo "<ul>";
-                        foreach ($_SESSION['carrito'] as $producto_id => $cantidad) {
-                        // Aquí puedes buscar la información del producto en la base de datos utilizando $producto_id
-                        // y mostrarla como quieras. Por ahora, solo se muestra el ID del producto y la cantidad.
-                        echo "<li>Producto: {$producto_id} - Cantidad: {$cantidad}</li>";
-                        }
-                    echo "</ul>";
-                } else {
-                    echo "<h3>No hay productos en el carrito.</h3>";
-                }
-            ?>
-        </div>
+
+    <div id="formCarrito" class="main">
+        <h3>Carrito</h3>      
+        <br>
+        <table id="carrito" class='table'>        
+        </table>
+    </div>
+    <input type="submit" name="btEnviar" value="Confirmar" id="btEnviar" style="width:112px;" />
+                &nbsp;
     </div>
 </section>
 

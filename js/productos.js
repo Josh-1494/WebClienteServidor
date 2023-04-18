@@ -27,8 +27,6 @@ $(document).ready(function(){
     $("#btRestablecer").click(function(){
         LimpiaCampos();
     });
-
-
 });
 
 
@@ -98,6 +96,8 @@ for (i=0; i < ObjetoJSON.length; i++){
     $("#productos").append("<td>" + ObjetoJSON[i].CANTIDAD + "</td>");
     $("#productos").append("<td>" + "<a href='actualizaProducto.php?PRODUCTOID=" + ObjetoJSON[i].PRODUCTOID + "'>Modificar</a>" + "</td>");
     $("#productos").append("<td>" + "<a href='eliminarProducto.php?PRODUCTOID=" + ObjetoJSON[i].PRODUCTOID + "'>Eliminar</a>" + "</td>");
+    $("#productos").append("<td>" + "<a href='insertaCarrito.php?PRODUCTOID="+ ObjetoJSON[i].PRODUCTOID+
+    "&PRECIO="+ObjetoJSON[i].PRECIO+"'> + Carrito</a>" + "</td>");
     $("#productos").append("</tr>");
 }
 }
@@ -110,3 +110,4 @@ function LimpiaCampos(){
     $('#CANTIDAD').val('');
     
 }
+

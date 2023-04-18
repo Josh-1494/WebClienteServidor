@@ -96,3 +96,17 @@ CREATE UNIQUE INDEX INDX_personalizado_PK
 ON personalizado (personalizadoid);
 
 commit;
+
+
+
+CREATE TABLE `carrito` (                                                                      
+           `CARRITOID` INT(100)NOT NULL AUTO_INCREMENT,     
+           `PRODUCTOID` INT(100) NOT NULL, 
+           `PRECIO` DECIMAL(10,2)  NOT NULL,
+            PRIMARY KEY (`CARRITOID`),
+            KEY `FK_PRODUCTOID` (`PRODUCTOID`),                                                             
+           KEY `FK_PRECIO` (`PRECIO`),                                                   
+           CONSTRAINT `FK_PRODUCTOID` FOREIGN KEY (`PRODUCTOID`) REFERENCES `productos` (`PRODUCTOID`),          
+           CONSTRAINT `FK_PRECIO` FOREIGN KEY (`PRODUCTOID`) REFERENCES `productos` (`PRODUCTOID`)  
+         );
+         

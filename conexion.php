@@ -90,6 +90,32 @@ function InsertaProductos($pNOMBRE, $pDESCRIPCION, $pPRECIO, $pCANTIDAD)
     return $response;
 }
 
+function InsertaCarrito($pPRODUCTOID,$pPRECIO)
+{
+    $response = "";
+    $conn = conectar();
+
+    mysqli_set_charset($conn, "utf8");
+    $stmt = $conn->prepare("INSERT INTO CARRITO(PRODUCTOID,PRECIO) VALUES (?,?)");
+    $stmt->bind_param("id", $iPRODUCTOID, $iPRECIO);
+
+
+    $iPRODUCTOID = $pPRODUCTOID;
+    $iPRECIO = $pPRECIO;
+    
+
+  
+
+    $stmt->execute();
+
+    $response = "se almaceno correctamente";
+    
+    $stmt->close();
+    desconectar($conn);
+    return $response;
+
+}
+
 function actualizaProducto($pPRODUCTOID, $pNOMBRE, $pDESCRIPCION, $pPRECIO, $pCANTIDAD)
 {
     $response = "";
@@ -127,6 +153,22 @@ function eliminarProducto($pPRODUCTOID)
     $response = "";
     $conn=conectar();
     $stmt = $conn->prepare("delete from productos where PRODUCTOID = ?");
+    $stmt -> bind_param("i",$PRODUCTOID);
+
+    $PRODUCTOID = $pPRODUCTOID;
+    $stmt -> execute();
+    $response = "Se elimino correctamente";
+
+    $stmt -> close();
+    desconectar($conn);
+    return $response;
+}
+
+function eliminarCarrito($pPRODUCTOID)
+{
+    $response = "";
+    $conn=conectar();
+    $stmt = $conn->prepare("delete from carrito where PRODUCTOID = ?");
     $stmt -> bind_param("i",$PRODUCTOID);
 
     $PRODUCTOID = $pPRODUCTOID;
