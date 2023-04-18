@@ -22,7 +22,7 @@ include 'include/header.php';
                                 </div>
                                 <div class="form-col">
                                     <label for="telefono">Telefono</label>
-                                    <input type="tel" name="telefono" id="telefono" pattern="[0-9]{4}[0-9]{4}"
+                                    <input type="number" name="telefono" id="telefono" pattern="[0-9]{4}[0-9]{4}"
                                         minlength="8" required>
                                 </div>
                             </div>
